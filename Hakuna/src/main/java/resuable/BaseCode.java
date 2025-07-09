@@ -45,7 +45,7 @@ public class BaseCode {
             case "safari" -> driver = new SafariDriver();
             default -> throw new InvalidArgumentException("enter thr browser name");
         }
-
+           System.out.println("souja");
         driver.navigate().to(prob.getProperty("url"));
         driver.manage().window().maximize();
     }
